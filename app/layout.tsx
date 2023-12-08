@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/header";
+import ActionSectionContextProvider from "@/context/active-section-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,9 +33,10 @@ export default function RootLayout({
           sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem]
           2xl:left-[-5rem]"
         ></div>
-
-        <Header />
-        {children}
+        <ActionSectionContextProvider>
+          <Header />
+          {children}
+        </ActionSectionContextProvider>
       </body>
     </html>
   );
