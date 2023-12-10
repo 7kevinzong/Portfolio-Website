@@ -9,10 +9,12 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTheme } from "@/context/theme-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { theme } = useTheme();
 
   return (
     <section
@@ -32,13 +34,13 @@ export default function Intro() {
           >
             <Image
               alt="Kevin Zong portrait"
-              src="/headshot.png"
+              src={theme === "light" ? "/headshot.png" : "/headshot-dark.png"}
               width="192"
               height="192"
               quality="95"
               priority={true}
               className="h-24 w-24 rounded-full object-cover border-[0.35rem]
-            border-white shadow-xl"
+            border-white shadow-xl dark:border-gray-950"
             />
           </motion.div>
           <motion.span
@@ -96,7 +98,8 @@ export default function Intro() {
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2
           rounded-full outline-none focus:scale-110 hover:scale-110
-          active:scale-105 transition cursor-pointer borderBlack"
+          active:scale-105 transition cursor-pointer borderBlack
+          dark:bg-white/10"
           href="/resume.pdf"
           download="Resume-KevinZong.pdf"
         >
@@ -109,7 +112,8 @@ export default function Intro() {
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2
           rounded-full focus:scale-[1.15] hover:scale-[1.15]
-          hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+          hover:text-gray-950 active:scale-105 transition cursor-pointer
+          borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://linkedin.com/in/kevinzong/"
           target="_blank"
         >
@@ -119,7 +123,7 @@ export default function Intro() {
           className="bg-white p-4 text-gray-700 flex items-center gap-2
           text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]
           hover:text-gray-950 active:scale-105 transition cursor-pointer
-          borderBlack"
+          borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/7kevinzong/"
           target="_blank"
         >
