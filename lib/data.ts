@@ -107,6 +107,7 @@ export const projectsData = [
     description: `A full stack clone of the Airbnb website. Users can create
       and manage trips, reservations, and listings.`,
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma", "NextAuth"],
+    websiteUrl: "https://airbnb-pretty-much.vercel.app/",
     imageUrl: airbnbPrettyMuch,
   },
 ] as const;

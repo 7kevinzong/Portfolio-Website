@@ -12,6 +12,7 @@ export default function Project({
   title,
   description,
   tags,
+  websiteUrl,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -31,7 +32,10 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group mb-3 sm:mb-8 last:mb-0"
+      className="group mb-3 sm:mb-8 last:mb-0 hover:cursor-pointer"
+      onClick={() => {
+        window.open(websiteUrl);
+      }}
     >
       <section
         className=" bg-gray-100 max-w-[42rem] border border-black/5
