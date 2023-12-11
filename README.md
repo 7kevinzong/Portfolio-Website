@@ -2,8 +2,6 @@
 
 <img alt="version" src="https://img.shields.io/badge/version-0.1.0-blue" />
 
-<br />
-
 # Personal Portfolio Website
 
 This is my developer portfolio website where I showcase all my projects along
