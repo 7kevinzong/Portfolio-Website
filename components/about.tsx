@@ -20,22 +20,20 @@ export default function About() {
     >
       <SectionHeading> About me </SectionHeading>
       <p className="mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I'm a former software development engineer at Amazon Web Services. I
+        spent 2 years in the Builder Tools organization building scalable
+        distributed backend services and tools to support internal developers
+        building applications with AWS. I graduated from the University of
+        Maryland, College Park in 2021 with a B.S. in Computer Engineering and a
+        citation from the Advanced Cybersecurity Experience for Students (ACES)
+        honors college.
       </p>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        When I'm not coding, you'll probably find me learning a new song on the
+        guitar or cruising around on my e-bike. I grew up playing hockey, but
+        I've also recently picked up a knack for golf and volleyball. And as an
+        Eagle Scout, I love pretty much anything outdoors, especially hiking,
+        snowboarding, and paddleboarding.
       </p>
     </motion.section>
   );
