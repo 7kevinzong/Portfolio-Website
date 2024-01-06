@@ -37,11 +37,12 @@ export const experiencesData = [
     description: [
       `Developed and maintained scalable infrastructure for an internal web
       service used by over 40K developers daily.`,
-      `Collaborated with subject matter experts across the company to formulate
-      “Golden Paths”, providing opinionated and supported paths for building and
-      deploying applications.`,
+      `Collaborated with 10+ subject matter experts across the company to
+      formulate internal “Golden Paths”, providing best practices and
+      opinionated end-to-end paths to accelerate application development.`,
       `Designed and integrated an ETL pipeline to quantify the 16% improvement
-      of developer velocity after releasing the Golden Paths.`,
+      in developer velocity across the company after releasing the Golden
+      Paths.`,
     ],
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
