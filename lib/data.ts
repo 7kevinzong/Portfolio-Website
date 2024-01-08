@@ -35,14 +35,15 @@ export const experiencesData = [
     company: "Amazon Web Services",
     location: "Seattle, WA",
     description: [
-      `Developed and maintained scalable infrastructure for an internal web
-      service used by over 40K developers daily.`,
-      `Collaborated with 10+ subject matter experts across the company to
-      formulate internal “Golden Paths”, providing best practices and
-      opinionated end-to-end paths to accelerate application development.`,
-      `Designed and integrated an ETL pipeline to quantify the 16% improvement
-      in developer velocity across the company after releasing the Golden
-      Paths.`,
+      `Scaled infrastructure to improve stability, reliability, and latency for
+      an internal pipeline service protecting over 40K developers from hazardous
+      configuration changes.`,
+      `Collaborated with 8 teams on company-wide infrastructure as code
+      initiatives to define and encapsulate engineering best practices and
+      orchestrate internal resources.`,
+      `Designed and integrated a data pipeline to generate metrics that
+      correlated best practice initiatives with a 16% improvement in overall
+      developer productivity.`,
     ],
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
